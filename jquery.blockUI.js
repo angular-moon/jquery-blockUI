@@ -531,7 +531,7 @@
 						actionTimeout = setTimeout(function(){centerFull(block);}, timeout);
 					}
 
-					action(0);
+					action(300);
 
 					var resizeTimeout;
 					$(window).resize(function(){
