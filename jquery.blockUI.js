@@ -177,13 +177,14 @@
 				border:		'5px solid #333',
 				'background-color':'white',
 				cursor:		'default',
-				'border-radius':'5px',
-				'transition': 'all .3s ease-in-out',
+				'border-radius':'5px'
+				/*'transition': 'all .3s ease-in-out',
 				'-webkit-transition': 'all .3s ease-in-out',
 				'-moz-transition': 'all .3s ease-in-out',
 				'-o-transition': 'all .3s ease-in-out',
 				'-webkit-animation-duration': '.3s',
-	 			'animation-duration': '.3s' 
+	 			'animation-duration': '.3s' ,*/
+
 			},
 
 			// minimal style set used when themes are used
@@ -518,6 +519,7 @@
 			if (full) {
 				if(opts.autoCenter){
 					var block = $(lyr3[0]);
+
 					window.blockWidth = block.width();
 					window.blockHeight = block.height();
 
@@ -531,7 +533,15 @@
 						actionTimeout = setTimeout(function(){centerFull(block);}, timeout);
 					}
 
-					action(300);
+					action(10);
+					setTimeout(function(){
+						block.css({'transition': 'all .3s ease-in-out',
+							'-webkit-transition': 'all .3s ease-in-out',
+							'-moz-transition': 'all .3s ease-in-out',
+							'-o-transition': 'all .3s ease-in-out',
+							'-webkit-animation-duration': '.3s',
+							'animation-duration': '.3s'})
+					},100);
 
 					var resizeTimeout;
 					$(window).resize(function(){
