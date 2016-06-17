@@ -4,7 +4,7 @@
     "name": "jquery-blockUI",
     "main": "jquery.blockUI.js",
     "dependencies": [
-        "jquery@1.8.3"
+        "jquery@^1.8.3"
     ],
     "shim": {
         "jquery.blockUI.js": {
