@@ -177,7 +177,8 @@
 				border:		'5px solid #333',
 				'background-color':'white',
 				cursor:		'default',
-				'border-radius':'5px'
+				'border-radius':'5px',
+				'box-sizing': 'content-box',
 				/*'transition': 'all .3s ease-in-out',
 				'-webkit-transition': 'all .3s ease-in-out',
 				'-moz-transition': 'all .3s ease-in-out',
